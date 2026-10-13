@@ -6,7 +6,7 @@
 /*   By: mhinojos <mhinojos@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/09 13:25:35 by mhinojos          #+#    #+#             */
-/*   Updated: 2026/10/13 14:21:34 by mhinojos         ###   ########.fr       */
+/*   Updated: 2026/10/13 14:35:26 by mhinojos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,3 +74,29 @@ int	ft_printf(const char *src, ...)
 	va_end(args);
 	return (strlenf(src) + count);
 }
+
+/*int	main(void)
+{
+	int		value;
+	unsigned int	uvalue;
+	char	*text;
+
+	value = -42;
+	uvalue = 4294967295U;
+	text = "Hello, 42!";
+	ft_printf("Test c: [%c]\n", 'A');
+	ft_printf("Test s: [%s]\n", text);
+	ft_printf("Test s empty: [%s]\n", "");
+	ft_printf("Test s NULL: [%s]\n", (char *)0);
+	ft_printf("Test d/i: [%d] [%i]\n", value, 42);
+	ft_printf("Test d minimum: [%d]\n", -2147483647 - 1);
+	ft_printf("Test u: [%u]\n", uvalue);
+	ft_printf("Test x/X: [%x] [%X]\n", 48879U, 48879U);
+	ft_printf("Test hex zero: [%x] [%X]\n", 0U, 0U);
+	ft_printf("Test p: [%p]\n", (void *)&value);
+	ft_printf("Test p NULL: [%p]\n", (void *)0);
+	ft_printf("Test percent: [%%]\n");
+	ft_printf("Test return count: [%d]\n", ft_printf("abc %d", 42));
+	ft_printf("Test trailing percent: [abc%]");
+	return (0);
+}*/
